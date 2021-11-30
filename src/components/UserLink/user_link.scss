@@ -1,0 +1,20 @@
+@use 'src/styles/utils';
+
+.user-link {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+
+  &:hover {
+    @include utils.button-hover;
+  }
+
+  .avatar-container { 
+    @include utils.flex-settings(row, center, center);
+  
+    h5 {
+      margin-left: 10px;
+      font-size: 0.8rem;
+    }
+  }
+}

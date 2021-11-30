@@ -1,0 +1,13 @@
+@use 'src/styles/utils';
+
+.button {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0px;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    @include utils.button-hover;
+  }
+}

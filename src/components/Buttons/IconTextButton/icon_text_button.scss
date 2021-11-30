@@ -1,0 +1,21 @@
+@use 'src/styles/utils';
+
+.button-container {
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: transparent;
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 100%;
+  @include utils.flex-settings(row, space-between, center);
+
+  &:hover {
+    @include utils.button-hover
+  }
+
+  .button-label {
+    margin-left: 10px;
+    font-size: 0.8rem;
+  }
+}

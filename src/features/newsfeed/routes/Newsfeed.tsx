@@ -1,11 +1,11 @@
-import React from 'react';
-import Navbar from '../../../components/Navbar/Navbar';
+import CreatePostInput from '../components/CreatePostInput';
 import NewsfeedListView from '../components/NewsfeedListView';
+import '../styles/newsfeed.scss';
 
 const Newsfeed = () => {
   return (
-    <div>
-      <Navbar />
+    <div className='newsfeed-container'>
+      <CreatePostInput />
       <NewsfeedListView />
     </div>
   )

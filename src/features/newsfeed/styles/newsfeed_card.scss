@@ -1,0 +1,35 @@
+@use 'src/styles/utils';
+@use 'src/styles/variables';
+
+.card-container {
+  max-width: variables.$tablet-width;
+  min-height: 150px;
+  border: solid 1px variables.$border-color;
+  margin: 10px 0;
+  padding: 1rem 2rem 0.5rem;
+  background-color: rgb(255, 255, 255);
+  @include utils.flex-settings(column);
+  
+  .top-area {
+    width: 100%;
+    @include utils.flex-settings(row, normal, center);
+  }
+
+  .body-area {
+    width: 100%;
+    @include utils.flex-settings(column, center, flex-start);
+    flex-wrap: wrap;
+  }
+
+  .footer-area {
+    @include utils.flex-settings(row, normal, center);
+    height: 2rem;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .card-container {
+    border-radius: 5px;
+  }
+}

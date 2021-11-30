@@ -1,13 +1,14 @@
-$border-color: rgb(206, 206, 206);
+@use 'src/styles/variables';
 
 .navbar-container {
   height: 3rem;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid variables.$border-color;
   width: 100%;
   margin: 0;
   padding: 0;
   flex-direction: row;
   display: flex;
+  background-color: rgb(255, 255, 255);
 
   .logo-area {
     width: 25%;
@@ -16,7 +17,7 @@ $border-color: rgb(206, 206, 206);
     justify-content: space-around;
     align-items: center;
     
-    border-right: 1px solid $border-color;
+    border-right: 1px solid  variables.$border-color;
 
     .logo {
       width: 4.5rem;
@@ -34,9 +35,9 @@ $border-color: rgb(206, 206, 206);
     justify-content: flex-end;
     align-items: center;
 
-    .write-icon {
-      margin-right: 0.8rem;
-    }
+    // .write-icon {
+    //   margin-right: 0.8rem;
+    // }
 
   }
 }

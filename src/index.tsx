@@ -7,7 +7,7 @@ import Newsfeed from './features/newsfeed/routes/Newsfeed';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Newsfeed />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

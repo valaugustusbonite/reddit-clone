@@ -1,0 +1,6 @@
+@use 'src/styles/variables';
+@use 'src/styles/utils';
+
+.newsfeed-container {
+  @include utils.flex-settings(column, flex-start, center);
+}

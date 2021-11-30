@@ -1,0 +1,49 @@
+@use 'src/styles/utils';
+@use 'src/styles/variables';
+
+.form-container {
+  max-width: variables.$tablet-width;
+  min-height: 150px;
+  border: solid 1px variables.$border-color;
+  margin: 10px 0;
+  padding: 1rem 2rem 0.5rem;
+  background-color: rgb(255, 255, 255);
+  @include utils.flex-settings(column);
+
+  input[type=text], select {
+    //width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    //width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+}
+
+
+
+
+@media (min-width: variables.$tablet-width) {
+  .form-container {
+    border-radius: 5px;
+  }
+}
+
+
+

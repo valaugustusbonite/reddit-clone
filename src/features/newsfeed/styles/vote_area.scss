@@ -1,0 +1,12 @@
+@use 'src/styles/utils';
+
+.vote-container {
+  @include utils.flex-settings(row, space-around, center);
+  height: 50px;
+  width: 100px;
+
+  .count {
+    margin: 0;
+    padding: 0;
+  }
+}

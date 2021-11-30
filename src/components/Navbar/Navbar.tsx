@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css';
+import './navbar.scss';
 import redditLogo from '../../assets/images/reddit_with_name.png';
 import * as HiIcons from 'react-icons/hi';
 import * as GrIcons from 'react-icons/gr';
@@ -16,12 +16,11 @@ const Navbar = () => {
     <>
       <div className='navbar-container'>
         <div className='logo-area'>
-          <img  src={redditLogo} alt="reddit_logo" className='logo'/>
-
+          <h3>weddit</h3>
         </div>
         <div className='search-area'>
           <FaIcons.FaRegEdit size='1.5rem' className='write-icon'/>
-          {
+          {/* {
             isMenuOpen ? 
             (
               <GrIcons.GrClose size='1.5rem' onClick={toggleMenu} />
@@ -29,7 +28,7 @@ const Navbar = () => {
             (
               <HiIcons.HiOutlineMenuAlt3 size='1.5rem' onClick={toggleMenu} />
             )
-          }
+          } */}
         </div>
       </div>
       
