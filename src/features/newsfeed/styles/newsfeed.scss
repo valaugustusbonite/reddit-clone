@@ -2,5 +2,7 @@
 @use 'src/styles/utils';
 
 .newsfeed-container {
-  @include utils.flex-settings(column, flex-start, center);
+  width: 100%;
+  height: 100%;
+  @include utils.flex-settings(column, center, center);
 }

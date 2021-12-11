@@ -1,5 +1,5 @@
 import React from 'react'
-import CircleAvatar from '../Avatar/CircleAvatar'
+import CircleAvatar from 'components/Avatar/CircleAvatar'
 import './user_link.scss';
 
 const UserLink = () => {

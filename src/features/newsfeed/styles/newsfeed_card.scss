@@ -2,7 +2,7 @@
 @use 'src/styles/variables';
 
 .card-container {
-  max-width: variables.$tablet-width;
+  width: variables.$tablet-width;
   min-height: 150px;
   border: solid 1px variables.$border-color;
   margin: 10px 0;

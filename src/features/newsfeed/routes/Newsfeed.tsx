@@ -5,8 +5,10 @@ import '../styles/newsfeed.scss';
 const Newsfeed = () => {
   return (
     <div className='newsfeed-container'>
+      <div className='list-container'>
       <CreatePostInput />
       <NewsfeedListView />
+      </div>
     </div>
   )
 }

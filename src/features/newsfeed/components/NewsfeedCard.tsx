@@ -1,9 +1,9 @@
 import React from 'react'
-import IconTextButton from '../../../components/Buttons/IconTextButton/IconTextButton';
+import IconTextButton from 'components/Buttons/IconTextButton/IconTextButton';
 import '../styles/newsfeed_card.scss';
 import VoteArea from './VoteArea';
 import * as FiIcons from 'react-icons/fi';
-import UserLink from '../../../components/UserLink/UserLink';
+import UserLink from 'components/UserLink/UserLink';
 
 interface NewsfeedCardProps {
   title: string;
